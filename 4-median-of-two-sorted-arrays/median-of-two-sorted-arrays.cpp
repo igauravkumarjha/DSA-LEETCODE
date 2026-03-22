@@ -26,9 +26,10 @@ int n = nums2.size();
         }
 
         int s=0;
-int e=ans.size();
-int mid=s+(e-s)/2;
-        int g=ans.size();
+// int e=ans.size();
+int g=ans.size();
+int mid=s+(g-s)/2;
+        
         if(g%2!=0){
             return ans[mid];
         }
