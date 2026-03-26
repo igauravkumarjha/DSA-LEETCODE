@@ -2,17 +2,17 @@ class Solution {
 public:
 bool ispossible(vector<int>& nums, int k,int n,int mid){
     int arraycount =1;
-    int pagesum=0;
+    int subarraysum=0;
     for(int i=0;i<n;i++){
-        if(pagesum+nums[i]<=mid){ 
-        pagesum+=nums[i];
+        if(subarraysum+nums[i]<=mid){ 
+       subarraysum+=nums[i];
     }
     else{
         arraycount++;
         if(arraycount>k || nums[i]>mid){
             return false;
         }
-        pagesum=+nums[i];
+        subarraysum=+nums[i];
     }
     }
     return true;
