@@ -23,7 +23,7 @@ public:
                 ans = max(ans, j - starting);
             }
 
-            i++;
+            i++;  //  only here
         }
 
         return ans;
