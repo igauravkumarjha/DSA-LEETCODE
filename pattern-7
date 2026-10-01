@@ -6,7 +6,7 @@ char x='A';
 int main() {
    int n;
     cin>>n;
-    char g=3*n+2+'A';
+    char g = 'A' + (4*n - 5);
 	for(int i=1;i<=n;i++){
 	    cout<<x;
 	    x++;
@@ -22,7 +22,7 @@ int main() {
 	 cout << x << '\n';
 	x++;
 	}
-	 char z=x+6;
+	 char z=x+(n-1);
 	for(int i=1;i<=n;i++){
 	   
 	    cout<<z;
