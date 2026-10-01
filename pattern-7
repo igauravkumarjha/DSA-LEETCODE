@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+char x='A';
+
+int main() {
+   int n;
+    cin>>n;
+    char g=3*n+2+'A';
+	for(int i=1;i<=n;i++){
+	    cout<<x;
+	    x++;
+	}
+	cout<<endl;
+
+	for(int i=1;i<=n-2;i++){
+	    cout<<g;
+	    g--;
+	    for(int i=n-1;i>0;i--){
+	    cout<<" ";
+	}
+	 cout << x << '\n';
+	x++;
+	}
+	 char z=x+6;
+	for(int i=1;i<=n;i++){
+	   
+	    cout<<z;
+	    z--;
+	}
+	
+	
+}
